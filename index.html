@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciremun</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    a,
+    a:visited {
+        color: #0077b6;
+        text-decoration: none;
+        font-style: italic;
+    }
+    .ciremun {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        font-size: 3.5em;
+    }
+    .shadow {
+        display: flex;
+        justify-content: center;
+        font-size: 3.5em;
+        opacity: 0.02;
+    }
+    .rows {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+    .row {
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 10px;
+    }
+    .first {
+        width: 400px;
+    }
+    .row div {
+        font-size: 1.4em;
+    }
+    @media (max-width: 858px) {
+        .ciremun, .shadow {
+            font-size: 3em;
+        }
+        .row {
+            display: block;
+            text-align: center;
+        }
+        .row div {
+            font-size: 1.2em;
+        }
+        .first {
+            width: auto;
+        }
+    }
+</style>
+<body>
+    <div class="ciremun">Ciremun</div>
+    <div class="shadow">things to look at</div>
+    <div class="rows">
+        <div>
+            <div class="row">
+                <div class="first"><a target="_blank" href="https://ciremun.github.io/graph-ops/">https://ciremun.github.io/graph-ops/</a></div>
+                <div>WIP visualized graph operations [C++, ImGui]</div>
+            </div>
+            <div class="row">
+                <div class="first"><a target="_blank" href="https://ciremun.github.io/fisiks/">https://ciremun.github.io/fisiks/</a></div>
+                <div>cross-plaform falling sand [C, rawdraw]</div>
+            </div>
+            <div class="row">
+                <div class="first"><a target="_blank" href="https://ciremun.github.io/game-of-life/">https://ciremun.github.io/game-of-life/</a></div>
+                <div> cellular automatons [C, rawdraw]</div>
+            </div>
+            <div class="row">
+                <div class="first"><a target="_blank" href="https://ciremun.github.io/color-balance/">https://ciremun.github.io/color-balance/</a></div>
+                <div>GIMP color balance [JavaScript]</div>
+            </div>
+            <div class="row">
+                <div class="first"><a target="_blank" href="https://ciremun.github.io/glsl-playground/">https://ciremun.github.io/glsl-playground/</a></div>
+                <div>fragment shader playground [TypeScript]</div>
+            </div>
+            <div class="row">
+                <div class="first"><a target="_blank" href="https://php-hop.herokuapp.com/">https://php-hop.herokuapp.com/</a></div>
+                <div>url-shortener [PHP, nginx]</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
